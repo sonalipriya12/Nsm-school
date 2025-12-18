@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NSM Alumni Association</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4d2a2a2a2a.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <!-- Top Header -->
+    <header class="top-header">
+      <div class="container header-inner">
+        <div class="logo-area">
+          <div class="logo-circle">NSM</div>
+          <div class="logo-text">
+            <span class="logo-title">NSM Alumni Association</span>
+            <span class="logo-subtitle">NSM College</span>
+          </div>
+        </div>
+        <div class="header-right">
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook" class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" aria-label="Twitter" class="social-icon">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" aria-label="Instagram" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="YouTube" class="social-icon">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+          <button class="btn-signin">
+            <i class="far fa-user"></i>
+            <span>Sign In</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Navigation -->
+      <nav class="main-nav">
+        <div class="container nav-inner">
+          <ul class="nav-menu">
+            <li class="nav-item active">
+              <a href="#" data-page="home">Home</a>
+            </li>
+            <li class="nav-item has-dropdown">
+              <a href="#" data-page="about">About NSM</a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item" data-subpage="about-overview"
+                  >About NSM Alumni Association</a
+                >
+                <a href="#" class="dropdown-item" data-subpage="president"
+                  >President's Message</a
+                >
+                <a href="#" class="dropdown-item" data-subpage="executive-committee"
+                  >Executive Committee</a
+                >
+                <a href="#" class="dropdown-item" data-subpage="chapters"
+                  >Alumni Chapters</a
+                >
+                <a href="#" class="dropdown-item" data-subpage="benefits"
+                  >Alumni Benefits</a
+                >
+              </div>
+            </li>
+            <li class="nav-item has-dropdown">
+              <a href="#" data-page="connect">NSM Alumni Connect</a>
+              <div class="dropdown-menu mega connect-dropdown">
+                <div class="dropdown-column">
+                  <div class="dropdown-heading">My Profile</div>
+                  <a href="#" class="dropdown-item">My Profile</a>
+                </div>
+                <div class="dropdown-column">
+                  <div class="dropdown-heading">Alumni - Alumni</div>
+                  <a href="#" class="dropdown-item">Alumni Event</a>
+                  <a href="#" class="dropdown-item">Careers - Evaluate Your Profile</a>
+                  <a href="#" class="dropdown-item">Careers - Current Openings</a>
+                  <a href="#" class="dropdown-item">Network - Alumni Directory</a>
+                  <a href="#" class="dropdown-item">Network - Business Directory</a>
+                </div>
+                <div class="dropdown-column">
+                  <div class="dropdown-heading">Alumni - NSM</div>
+                  <a href="#" class="dropdown-item">Campus Events</a>
+                  <a href="#" class="dropdown-item">Volunteering Work</a>
+                  <a href="#" class="dropdown-item">How to Give</a>
+                  <a href="#" class="dropdown-item">Connect With Us</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-page="alumni-day">NSM Alumni Day</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-page="events">NSM Alumni Events</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-page="reunion">Re-Union</a>
+            </li>
+            <li class="nav-item has-dropdown">
+              <a href="#" data-page="gallery">Gallery</a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item" data-subpage="photo-gallery"
+                  >Photo Gallery</a
+                >
+                <a href="#" class="dropdown-item" data-subpage="video-gallery"
+                  >Video Gallery</a
+                >
+                <a href="#" class="dropdown-item" data-subpage="chapter-gallery"
+                  >Chapter Gallery</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-page="faq">FAQ's</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-page="contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 id="hero-title">ABOUT NSM</h1>
+      </div>
+    </section>
+
+    <!-- Main Content Wrapper -->
+    <main class="main-content container">
+      <!-- Sidebar + Content layout for ABOUT page -->
+      <aside class="sidebar">
+        <nav class="sidebar-nav">
+          <a href="#" class="sidebar-link active">About NSM</a>
+          <a href="#" class="sidebar-link">President's Message</a>
+          <a href="#" class="sidebar-link">Executive Committee</a>
+          <a href="#" class="sidebar-link">Alumni Chapters</a>
+          <a href="#" class="sidebar-link">Former NSM Directors</a>
+          <a href="#" class="sidebar-link">Alumni Benefits</a>
+          <a href="#" class="sidebar-link">NSM Annual Reports</a>
+        </nav>
+      </aside>
+
+      <section class="page-content">
+        <!-- Home Content -->
+        <div id="page-home" class="page-section">
+          <h2 class="page-title">Welcome to NSM Alumni Association</h2>
+          <div class="home-layout">
+            <div class="home-column">
+              <h3 class="home-box-title">About NSM</h3>
+              <p class="page-text">
+                NSM Alumni Association brings together graduates across generations to
+                celebrate achievements, share opportunities, and support the growth of
+                NSM College.
+              </p>
+              <p class="page-text">
+                Stay connected with your batchmates, faculty and the broader NSM
+                community through events, networking and mentoring initiatives.
+              </p>
+            </div>
+            <div class="home-column home-image-column">
+              <img
+                src="https://via.placeholder.com/640x360?text=NSM+Alumni+Summit"
+                alt="NSM Alumni Summit"
+                class="home-main-image"
+              />
+              <p class="home-image-caption">NSM Alumni Summit – Celebrating Success</p>
+            </div>
+            <div class="home-column">
+              <h3 class="home-box-title">Highlights</h3>
+              <ul class="home-highlights">
+                <li>Donation drives for student scholarships and research.</li>
+                <li>Annual NSM Alumni Day with global participation.</li>
+                <li>Regional chapter meets and professional networking.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Content -->
+        <div id="page-about" class="page-section visible">
+          <h2 class="page-title">About NSM Alumni Association</h2>
+          <p class="page-text">
+            NSM Alumni Association was officially started in 1990 with the vision of
+            building a vibrant community of graduates who support each other and their
+            alma mater. At present there are 34,000+ members.
+          </p>
+          <p class="page-text">
+            NSM College aims at the training of young men and women of quality to be
+            leaders in all walks of life and to serve society in justice, truth and
+            service. It is expected that this training will play a vital role in
+            bringing about a just social order in our country.
+          </p>
+        </div>
+
+        <!-- Connect Page Content -->
+        <div id="page-connect" class="page-section">
+          <h2 class="page-title">NSM Connect</h2>
+          <div class="connect-box">
+            <p>
+              NSM Connect is a platform provided by the NSM Alumni Association to
+              enable alumni across the globe to stay connected, collaborate, and
+              contribute to the growth of the NSM community.
+            </p>
+            <p>
+              Sign in to access exclusive alumni features, participate in events,
+              mentor students, and support ongoing projects at NSM College.
+            </p>
+            <button class="btn-teal">Sign In Now</button>
+          </div>
+        </div>
+
+        <!-- Gallery Page Content -->
+        <div id="page-gallery" class="page-section">
+          <h2 class="page-title">Photo Gallery</h2>
+          <p class="page-text">
+            NSM Collections – Browse alumni memories and events through the years.
+          </p>
+          <div class="gallery-grid">
+            <!-- Years 2025 down to 1993 -->
+            <!-- Generated manually to keep HTML static -->
+            <div class="year-card">
+              <div class="year-text">2025</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">2024</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">2023</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">2022</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">2021</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">2020</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <!-- ... continue down to 1993 ... -->
+            <div class="year-card">
+              <div class="year-text">2019</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">2018</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">2017</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">2016</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">2015</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">2014</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">2013</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">2012</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">2011</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">2010</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">2009</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">2008</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">2007</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">2006</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">2005</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">2004</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">2003</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">2002</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">2001</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">2000</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">1999</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">1998</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">1997</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">1996</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">1995</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">1994</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+            <div class="year-card">
+              <div class="year-text">1993</div>
+              <a href="#" class="view-link">View</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- NSM Alumni Day Page Content -->
+        <div id="page-alumni-day" class="page-section">
+          <h2 class="page-title">NSM Alumni Day</h2>
+          <img
+            src="https://via.placeholder.com/900x350?text=NSM+Alumni+Day+Celebrations"
+            alt="NSM Alumni Day"
+            class="content-banner-image"
+          />
+          <p class="page-text">
+            NSM Alumni Day is celebrated every year on the first Sunday of August.
+            Graduates from across the globe return to campus to reconnect with
+            faculty, friends and the NSM spirit.
+          </p>
+          <p class="page-text">
+            The day features keynote addresses, cultural performances, recognition of
+            distinguished alumni, and opportunities to engage with current students.
+          </p>
+        </div>
+
+        <!-- NSM Alumni Events Page Content -->
+        <div id="page-events" class="page-section">
+          <h2 class="page-title">NSM Alumni Events</h2>
+          <div class="events-grid">
+            <div class="event-card">
+              <img
+                src="https://via.placeholder.com/400x220?text=NSM+Career+Meet"
+                alt="NSM Career Meet"
+              />
+              <h3>Career Connect 2025</h3>
+              <p>
+                An exclusive networking event where NSM alumni share industry insights,
+                mentor final-year students and explore collaboration opportunities.
+              </p>
+            </div>
+            <div class="event-card">
+              <img
+                src="https://via.placeholder.com/400x220?text=NSM+Global+Chapter"
+                alt="NSM Global Chapter"
+              />
+              <h3>Global Chapters Meet</h3>
+              <p>
+                Regional alumni chapters host meetups in major cities worldwide,
+                strengthening the NSM network beyond campus.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Re-Union Page Content -->
+        <div id="page-reunion" class="page-section">
+          <h2 class="page-title">Batch Re-Unions</h2>
+          <p class="page-text">
+            NSM encourages every graduating batch to organize regular reunions on
+            campus and across cities. Reunions are a perfect occasion to relive
+            memories, meet professors and celebrate shared milestones.
+          </p>
+          <img
+            src="https://via.placeholder.com/900x300?text=NSM+Batch+Reunion"
+            alt="NSM Batch Reunion"
+            class="content-banner-image"
+          />
+        </div>
+
+        <!-- FAQ Page Content -->
+        <div id="page-faq" class="page-section">
+          <h2 class="page-title">Frequently Asked Questions</h2>
+          <div class="faq-item">
+            <h3>How do I register as an NSM alumnus?</h3>
+            <p>
+              Click on the Sign In button at the top-right and follow the registration
+              process. Once approved, you will receive login credentials via email.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>How can I contribute to NSM?</h3>
+            <p>
+              You can contribute through scholarships, infrastructure support, student
+              mentoring or by hosting events. Reach out via the Contact Us page for
+              more details.
+            </p>
+          </div>
+        </div>
+
+        <!-- Contact Page Content -->
+        <div id="page-contact" class="page-section">
+          <h2 class="page-title">Contact NSM Alumni Association</h2>
+          <p class="page-text">
+            For any queries related to alumni registration, events or contributions,
+            please write to us or call the NSM Alumni Office.
+          </p>
+          <div class="contact-grid">
+            <div>
+              <h3>Office Address</h3>
+              <p>
+                NSM Alumni Association<br />
+                NSM College<br />
+                City - 000 000, State, Country.
+              </p>
+            </div>
+            <div>
+              <h3>Contact</h3>
+              <p>
+                Phone: +91-90000 00000<br />
+                Email: alumni@nsmcollege.edu
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Floating Contact Bar -->
+    <section class="contact-bar-wrapper">
+      <div class="container contact-bar">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="contact-text">
+            NSM Alumni Association<br />
+            NSM College<br />
+            City - 000 000, State, Country.
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <div class="contact-text">
+            +91-90000 00000<br />
+            +91-44-00000000
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-text">
+            office@nsmalumni.org<br />
+            alumni@nsmcollege.edu
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <div class="footer-column">
+          <h3 class="footer-title">About NSM</h3>
+          <p class="footer-text">
+            NSM College aims at the training of young men and women of quality to be
+            leaders in all walks of life and to serve society in justice, truth and
+            service. It is expected that this training will play a vital role in
+            bringing about a just social order in our country.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-title">India Events</h3>
+          <div class="event-item">
+            <div class="date-box">
+              <div class="day">10.01</div>
+              <div class="year">2025</div>
+            </div>
+            <div class="event-details">
+              <h4>B.Com batch of 1973-1976 Reunion (NSM)</h4>
+            </div>
+          </div>
+          <div class="event-item">
+            <div class="date-box">
+              <div class="day">04.08</div>
+              <div class="year">2024</div>
+            </div>
+            <div class="event-details">
+              <h4>NSM Alumni Day 2024</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-title">International Events</h3>
+          <div class="event-item">
+            <div class="date-box">
+              <div class="day">15.08</div>
+              <div class="year">2024</div>
+            </div>
+            <div class="event-details">
+              <h4>NSM International Alumni Day</h4>
+            </div>
+          </div>
+          <div class="event-item">
+            <div class="date-box">
+              <div class="day">10.09</div>
+              <div class="year">2023</div>
+            </div>
+            <div class="event-details">
+              <h4>Singapore NSM Chapter Reunion</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#">Photo Gallery</a></li>
+            <li><a href="#">Video Gallery</a></li>
+            <li><a href="#">Press Releases</a></li>
+            <li><a href="#">Alumni Chapter</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <div class="footer-copy">
+            © 2019 NSM Alumni Association - All Rights Reserved.
+          </div>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
