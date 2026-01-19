@@ -533,7 +533,6 @@ function initImageSliders(): void {
 function initGalleryTabs(): void {
   const galleryTabs = document.querySelectorAll<HTMLButtonElement>('.gallery-tab[data-gallery-type]');
   const gallerySections = document.querySelectorAll<HTMLElement>('.gallery-section');
-  const videosGrid = document.getElementById('videos-direct-grid');
 
   galleryTabs.forEach((tab) => {
     tab.addEventListener('click', () => {
@@ -734,7 +733,7 @@ function initYearPhotoGallery(): void {
     
     // Use year to determine which images to show (ensures different photos per year)
     const yearOffset = year % baseImages.length;
-    return baseImages.map((imgId, index) => {
+    return baseImages.map((_imgId, index) => {
       const selectedIndex = (index + yearOffset) % baseImages.length;
       return `https://images.unsplash.com/photo-${baseImages[selectedIndex]}?w=800&q=95&auto=format&fit=crop`;
     });
@@ -763,10 +762,10 @@ function initYearPhotoGallery(): void {
 
     // Update navigation buttons
     if (prevYearBtn) {
-      prevYearBtn.disabled = year <= 1993;
+      (prevYearBtn as HTMLButtonElement).disabled = year <= 1993;
     }
     if (nextYearBtn) {
-      nextYearBtn.disabled = year >= 2025;
+      (nextYearBtn as HTMLButtonElement).disabled = year >= 2025;
     }
 
     // Show modal
@@ -951,7 +950,7 @@ function initYearChapterGallery(): void {
       }
       // Generate India-specific photos
       const yearOffset = year % baseImages.length;
-      return baseImages.map((imgId, index) => {
+      return baseImages.map((_imgId, index) => {
         const selectedIndex = (index + yearOffset) % baseImages.length;
         return `https://images.unsplash.com/photo-${baseImages[selectedIndex]}?w=800&q=95&auto=format&fit=crop`;
       });
@@ -961,14 +960,14 @@ function initYearChapterGallery(): void {
       }
       // Generate International-specific photos (different order)
       const yearOffset = (year + 5) % baseImages.length;
-      return baseImages.map((imgId, index) => {
+      return baseImages.map((_imgId, index) => {
         const selectedIndex = (index + yearOffset + 3) % baseImages.length;
         return `https://images.unsplash.com/photo-${baseImages[selectedIndex]}?w=800&q=95&auto=format&fit=crop`;
       });
     } else {
       // All chapters - mix of both
       const yearOffset = year % baseImages.length;
-      return baseImages.map((imgId, index) => {
+      return baseImages.map((_imgId, index) => {
         const selectedIndex = (index + yearOffset) % baseImages.length;
         return `https://images.unsplash.com/photo-${baseImages[selectedIndex]}?w=800&q=95&auto=format&fit=crop`;
       });
@@ -1001,10 +1000,10 @@ function initYearChapterGallery(): void {
 
     // Update navigation buttons
     if (prevYearBtn) {
-      prevYearBtn.disabled = year <= 2016;
+      (prevYearBtn as HTMLButtonElement).disabled = year <= 2016;
     }
     if (nextYearBtn) {
-      nextYearBtn.disabled = year >= 2025;
+      (nextYearBtn as HTMLButtonElement).disabled = year >= 2025;
     }
 
     // Show modal
@@ -1091,7 +1090,7 @@ function initYearNostalgiaGallery(): void {
     ];
 
     const yearOffset = nostalgiaType === 'india' ? year % baseImages.length : (year + 7) % baseImages.length;
-    return baseImages.map((imgId, index) => {
+    return baseImages.map((_imgId, index) => {
       const selectedIndex = (index + yearOffset) % baseImages.length;
       return `https://images.unsplash.com/photo-${baseImages[selectedIndex]}?w=800&q=95&auto=format&fit=crop`;
     });
@@ -1116,8 +1115,8 @@ function initYearNostalgiaGallery(): void {
       photosGrid.appendChild(photoItem);
     });
 
-    if (prevYearBtn) prevYearBtn.disabled = year <= 1993;
-    if (nextYearBtn) nextYearBtn.disabled = year >= 2025;
+    if (prevYearBtn) (prevYearBtn as HTMLButtonElement).disabled = year <= 1993;
+    if (nextYearBtn) (nextYearBtn as HTMLButtonElement).disabled = year >= 2025;
 
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
@@ -1189,7 +1188,7 @@ function initYearReunionGallery(): void {
     ];
 
     const yearOffset = year % baseImages.length;
-    return baseImages.map((imgId, index) => {
+    return baseImages.map((_imgId, index) => {
       const selectedIndex = (index + yearOffset) % baseImages.length;
       return `https://images.unsplash.com/photo-${baseImages[selectedIndex]}?w=800&q=95&auto=format&fit=crop`;
     });
@@ -1211,8 +1210,8 @@ function initYearReunionGallery(): void {
     });
 
     const currentIndex = availableYears.indexOf(year);
-    if (prevYearBtn) prevYearBtn.disabled = currentIndex <= 0;
-    if (nextYearBtn) nextYearBtn.disabled = currentIndex >= availableYears.length - 1;
+    if (prevYearBtn) (prevYearBtn as HTMLButtonElement).disabled = currentIndex <= 0;
+    if (nextYearBtn) (nextYearBtn as HTMLButtonElement).disabled = currentIndex >= availableYears.length - 1;
 
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
@@ -1286,7 +1285,7 @@ function initYearShopGallery(): void {
     ];
 
     const yearOffset = shopType === 'india' ? (year + 3) % baseImages.length : (year + 9) % baseImages.length;
-    return baseImages.map((imgId, index) => {
+    return baseImages.map((_imgId, index) => {
       const selectedIndex = (index + yearOffset) % baseImages.length;
       return `https://images.unsplash.com/photo-${baseImages[selectedIndex]}?w=800&q=95&auto=format&fit=crop`;
     });
@@ -1311,8 +1310,8 @@ function initYearShopGallery(): void {
       photosGrid.appendChild(photoItem);
     });
 
-    if (prevYearBtn) prevYearBtn.disabled = year <= 1993;
-    if (nextYearBtn) nextYearBtn.disabled = year >= 2025;
+    if (prevYearBtn) (prevYearBtn as HTMLButtonElement).disabled = year <= 1993;
+    if (nextYearBtn) (nextYearBtn as HTMLButtonElement).disabled = year >= 2025;
 
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
